@@ -1,0 +1,333 @@
+:root{
+  --accent:#1f6feb;
+  --muted:#6b7280;
+  --bg:#ffffff;
+  --text:#0f172a;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  padding-top: 90px;
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+body.no-nav-padding {
+  padding-top: 0;
+}
+
+.container{
+  max-width:900px;
+  margin:36px auto;
+  padding:24px;
+}
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+  border-bottom:1px solid #e6e9ee;
+  padding-bottom:18px;
+  background-color: #eaf7ff;
+}
+.name{
+  font-size:1.8rem;
+  margin:0; 
+  align-items:center;
+}
+.title{
+  margin:4px 0 0;
+  color:var(--muted)
+}
+.contact{
+  font-size:0.9rem;
+  color:var(--muted);
+  text-align:right
+}
+.contact a{
+  color:inherit;
+  text-decoration:none
+}
+.contact .sep{
+  margin:0 8px;
+  color:#d1d5db
+}
+.summary, .skills{
+  margin-top:20px
+}
+.summary h2, .skills h2{
+  font-size:1.05rem;
+  margin:0 0 8px
+}
+.profile-pic {
+  width: 140px;      /* change this number */
+  height: 140px;     /* match width for a perfect circle */
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 3px solid #ddd;
+  float: left;
+}
+
+/* footer */
+.index-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+}
+.linkedin-link {
+  color: #0a66c2; /* LinkedIn blue */
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+.linkedin-link:hover {
+  text-decoration: underline;
+  color: #004182;
+}
+
+
+/* navbar buttons */
+.btn-blue-1 {
+  background-color: #152e69;
+  color: white;
+  border: none;
+}
+.btn-blue-1:hover {
+  background-color: #05112a;
+    color: #c5d2f1;
+}
+.btn-blue-2 {
+  background-color: #1b4b8f;
+  color: white;
+  border: none;
+}
+.btn-blue-2:hover {
+  background-color: #102f59;
+    color: rgb(193, 211, 243);
+}
+.btn-blue-3 {
+  background-color: #2f6fb2;
+  color: white;
+  border: none;
+}
+.btn-blue-3:hover {
+  background-color: #286baf;
+}
+.btn-blue-4 {
+  background-color: #4690e0;
+  color: white;
+  border: none;
+}
+.btn-blue-4:hover {
+  background-color: #5ca1e5;
+  color: #0a1a3f;
+}
+.btn-blue-5 {
+  background-color: #6ca7e7;
+  color: white;
+  border: none;
+}
+.btn-blue-5:hover {
+  background-color: #5ca1e5;
+  color: #0a1a3f;
+}
+
+/* navigations*/
+.resume-nav {
+  display: flex;
+  gap: 0.6rem;
+  padding: 1rem;
+  background: #f0f6ff;
+  border-bottom: 3px solid #0a1a3f;
+}
+.resume-nav2 {
+  display: flex;
+  padding: 1rem;
+  background: #415e8b;
+  border-bottom: 3px solid #0a1a3f;
+}
+
+/* section */
+.section {
+  margin: 2rem;
+  padding: 2rem;
+  background: #f7faff;
+  border-radius: 10px;
+  border-left: 6px solid #0a1a3f;
+}
+.section h1,
+.section h2 {
+  color: #0a1a3f;
+  margin-bottom: 0.5rem;
+}
+.section h1 {
+  border-bottom: 2px solid #3a6ea5;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+.section h2 {
+  color: #153b6f;
+  margin-top: 1.5rem;
+}
+.section p {
+  color: #0a1a3f;
+  margin-bottom: 0.6rem;
+}
+
+/* education */
+.edu-header {
+  background:#d3e4f7;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.education-entry {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 1.8rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid #d0e4ff;
+  position: relative;
+}
+.education-entry:last-child {
+  border-bottom: none;
+}
+.edu-marker {
+  width: 14px;
+  height: 14px;
+  background: #153b6f;
+  border-radius: 50%;
+  margin-top: 6px;
+  flex-shrink: 0;
+  border: 3px solid #8ec5ff;
+}
+.school {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #153b6f;
+}
+.degree {
+  font-size: 1rem;
+  color: #2f6fb2;
+  margin-top: 0.2rem;
+}
+.date {
+  font-size: 0.9rem;
+  color: #6c8ebf;
+  font-style: italic;
+  margin-top: 0.3rem;
+}
+.education-entry p {
+  margin-top: 0.4rem;
+  color: #0a1a3f;
+}
+
+/* skills */
+.skills-header {
+  background: d3e4f7;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.skills-category {
+  margin-bottom: 2rem;
+}
+.skills-category h2 {
+  color: #153b6f;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skill-list li {
+  background: #e3efff;
+  color: #0a1a3f;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  border: 1px solid #bcd4ff;
+  transition: 0.2s ease-in-out;
+}
+.skill-list li:hover {
+  background: #d4e6ff;
+  transform: translateY(-2px);
+}
+
+
+/* experience*/
+.experience-header,
+.internship-header {
+  background: #d3e4f7;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.experience-entry {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 2rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid #d0e4ff;
+}
+.experience-entry:last-child {
+  border-bottom: none;
+}
+.exp-marker {
+  width: 14px;
+  height: 14px;
+  background: #153b6f;
+  border-radius: 50%;
+  margin-top: 6px;
+  flex-shrink: 0;
+  border: 3px solid #8ec5ff;
+}
+.role {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #153b6f;
+}
+.company {
+  font-size: 1.05rem;
+  color: #2f6fb2;
+  margin-top: 0.2rem;
+}
+.date {
+  font-size: 0.9rem;
+  color: #6c8ebf;
+  font-style: italic;
+  margin-top: 0.3rem;
+}
+.experience-entry ul {
+  margin-top: 0.6rem;
+  padding-left: 1.2rem;
+}
+.experience-entry ul li {
+  color: #0a1a3f;
+  margin-bottom: 0.35rem;
+}
+
+
+@media (max-width:640px){
+  .hero{flex-direction:column;align-items:flex-start}
+  .contact{text-align:left}
+}

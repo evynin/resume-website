@@ -1,17 +1,29 @@
-# Resume Starter
+# Rian Idris — Personal Resume Website
 
-Files in this folder:
+A modern, responsive multi‑page resume website built to showcase my professional profile, education, skills, work experience, and honors. Designed with clean UI principles, consistent styling, and a blue gradient theme across all pages.
 
-- `index.html` — starter resume HTML (header, summary, skills)
-- `styles.css` — minimal styling and responsive layout
+## Overview
 
-How to preview:
+This project is a fully responsive personal resume website created using HTML, CSS, and Bootstrap.  
+It serves as a digital portfolio and professional presence, allowing recruiters and employers to quickly learn about my background and experience.
 
-1. Open [Assigment 1/resume/index.html](Assigment 1/resume/index.html) in your browser.
-2. Edit content (name, contact, sections) directly in the HTML.
+The site includes:
 
-Next steps you might want:
+- Profile / About Me  
+- Education  
+- Skills  
+- Work Experience  
+- Internships  
+- Honors & Awards  
 
-- Add an `Experience` section and `Education` section.
-- Replace placeholder data with your real contact links.
-- Add print stylesheet for PDF export.
+Each page uses a fixed navigation bar and a consistent design system.
+
+---
+
+## Technologies Used
+
+- **HTML5** — Structure and content  
+- **CSS3** — Custom styling and layout  
+- **Bootstrap 5** — Responsive grid, spacing utilities, and components
+
+---
